@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai Star Rail Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./gameplay.html">Gameplay</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <h1>Honkai Star Rail Gameplay Guide</h1>
+        
+        <section id="beginners-guide">
+            <h2>Beginner's Guide</h2>
+            <img src="../images/beginner_guide_img.png" alt="Beginner's guide illustration" class="gameplay-img">
+            <p>New to Honkai Star Rail? Start here to learn the basics!</p>
+            <ul id="Beginner-tips">
+                <li><a href="">Understanding the combat system</a></li>
+                <li><a href="">Exploring the world</a></li>
+                <li><a href="">Managing your team</a></li>
+            </ul>
+        </section>
+
+        <section id="advanced-tips">
+            <h2>Advanced Tips</h2>
+            <p>Ready to take your game to the next level? Check out these advanced strategies:</p>
+            <ul id="advanced-tips-list">
+                <!-- Advanced tips will be loaded here via JavaScript -->
+            </ul>
+        </section>
+
+        <section id="game-modes">
+            <h2>Game Modes</h2>
+            <select id="game-mode-select">
+                <option value="">Select a game mode</option>
+                <option value="story">Story Mode</option>
+                <option value="simulated-universe">Simulated Universe</option>
+                <option value="forgotten-hall">Forgotten Hall</option>
+            </select>
+            <p id="game-mode-description"></p>
+        </section>
+    </main>
+
+    <section id="feedback">
+        <h2>Provide Feedback</h2>
+        <form id="feedback-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            
+            <label for="feedback-type">Feedback Type</label>
+            <select id="feedback-type" name="feedback-type" required>
+                <option value="">Select feedback type</option>
+                <option value="bug">Bug Report</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="question">Question</option>
+            </select>
+            
+            <label for="feedback-content">Your Feedback</label>
+            <textarea id="feedback-content" name="feedback-content" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Honkai Star Rail Guide</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

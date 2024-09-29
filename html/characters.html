@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai Star Rail Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo.png">
+    
+    <style>
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            border: 1px solid #0f3460;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0f3460;
+        }
+
+        thead th {
+            color: #fff;
+        }
+
+        /* Grid Adjustment */
+        .grid-container {
+            gap: 60px;
+        }
+
+        #character-search label {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./gameplay.html">Gameplay</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <h1>Honkai Star Rail Characters</h1>
+        
+        <section id="character-search">
+            <h2>Search Characters</h2>
+            <form id="search-form">
+                <label for="character-name">Character Name</label>
+                <input type="text" id="character-name" name="character-name" placeholder="Name" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="character-list">
+            <h2>Character List</h2>
+            <table id="characters-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rarity</th>
+                        <th>Path</th>
+                        <th>Element</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Character data will be loaded via script.js -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tier-list">
+            <h2>Character Tier List</h2>
+            <p>This tier list is based on the current meta and is subject to change with game updates.</p>
+            <ul id="tier-list-content">
+                <!-- Tier list will be loaded via script.js -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Honkai Star Rail Guide</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
